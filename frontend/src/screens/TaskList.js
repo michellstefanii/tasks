@@ -149,14 +149,14 @@ export default class TaskList extends Component {
                     <TouchableOpacity onPress={() => this.props.navigation.openDrawer()}>
                             <Icon 
                             name='bars'
-                            size={20}
+                            size={30}
                             color={commonStyles.colors.secondary}
                             />
                         </TouchableOpacity>
                         <TouchableOpacity onPress={this.toogleFilter}>
                             <Icon 
                             name={this.state.showDoneTasks ? 'eye' : 'eye-slash'}
-                            size={20}
+                            size={30}
                             color={commonStyles.colors.secondary}
                             />
                         </TouchableOpacity>
