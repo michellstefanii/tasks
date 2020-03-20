@@ -10,6 +10,7 @@ import Menu from './screens/Menu'
 import commonStyles from './commonStyles'
 
 const menuConfig = {
+    unmountInactiveRoutes: true,
     initialRouteName: 'Today',
     contentComponent: Menu,
     contentOptions: {
