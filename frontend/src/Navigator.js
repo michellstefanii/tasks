@@ -10,6 +10,7 @@ import Menu from './screens/Menu'
 import commonStyles from './commonStyles'
 
 const menuConfig = {
+    unmountInactiveRoutes: true,
     initialRouteName: 'Today',
     contentComponent: Menu,
     contentOptions: {
@@ -26,6 +27,7 @@ const menuConfig = {
 
 const menuRoutes = {
     Today: {
+        unmountInactiveRoutes : true,
         name: 'Today',
         screen: props => <TaskList title='Hoje' daysAhead={0} {...props}/>,
         navigationOptions: {
