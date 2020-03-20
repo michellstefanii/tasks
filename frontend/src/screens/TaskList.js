@@ -149,14 +149,14 @@ export default class TaskList extends Component {
                     <TouchableOpacity onPress={() => this.props.navigation.openDrawer()}>
                             <Icon 
                             name='bars'
-                            size={30}
+                            size={20}
                             color={commonStyles.colors.secondary}
                             />
                         </TouchableOpacity>
                         <TouchableOpacity onPress={this.toogleFilter}>
                             <Icon 
                             name={this.state.showDoneTasks ? 'eye' : 'eye-slash'}
-                            size={30}
+                            size={20}
                             color={commonStyles.colors.secondary}
                             />
                         </TouchableOpacity>
@@ -182,7 +182,7 @@ export default class TaskList extends Component {
                 <TouchableOpacity 
                 style={[styles.addButton, { backgroundColor: this.getColor() }]}
                 activeOpacity={0.5}
-                onPress={() => this.setState({ showAddTask: true})}
+                onPress={() => this.setState({ showAddTask: true })}
                 >
                     <Icon 
                     name="plus" 
